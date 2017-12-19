@@ -18,7 +18,7 @@ cc.Class({
         this.label.string = this.text;
         console.log(">>>>:" + MyMessage);
 
-        window.ws = new WebSocket("ws://14.225.2.111:1280/megajackpot");
+        window.ws = new WebSocket("ws://kingviet.top:1280/megajackpot");
         window.listMessage = [];
         window.ws.binaryType = "arraybuffer";
 
@@ -68,12 +68,11 @@ cc.Class({
         }
     },
     handleMessage: function(buffer) {
-
         switch (buffer.message_id) {
             case NetworkManager.MESSAGE_ID.INITIALIZE:
                 var msg = buffer.response;
                 cc.log("message: " + msg.getMessage());
-                alert(msg.getMessage());
+                // alert(msg.getMessage());
                 break;
         }
     }

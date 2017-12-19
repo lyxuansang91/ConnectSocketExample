@@ -12,6 +12,7 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
+
     },
 
     // use this for initialization
@@ -19,8 +20,4 @@ cc.Class({
 
     },
 
-    // called every frame, uncomment this function to activate update callback
-    // update: function (dt) {
-
-    // },
 });
